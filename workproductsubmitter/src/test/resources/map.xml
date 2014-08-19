@@ -1,0 +1,31 @@
+<wmc:ViewContext id="MapViewContext-dbce22eb-e9a3-4509-8b0c-2a3764f4f38e" version="1.1.0" xmlns="http://www.saic.com/precis/2009/06/structures" xmlns:base="http://www.saic.com/precis/2009/06/base" xmlns:ns="http://ucore.gov/ucore/2.0" xmlns:ns1="http://metadata.dod.mil/mdr/ns/DDMS/2.0/" xmlns:wmc="http://www.opengis.net/context">
+  <wmc:General>
+    <wmc:Window height="500" width="600"/>
+    <wmc:BoundingBox SRS="EPSG:4326" maxx="-72.50748333333334" maxy="43.37295" minx="-81.50748333333334" miny="34.37295"/>
+    <wmc:Title>Default Map for Incident 'IG-8dee718c-da3c-412b-85ba-f7b5c15d20f1'</wmc:Title>
+    <wmc:KeywordList>
+      <wmc:Keyword>Default Map</wmc:Keyword>
+      <wmc:Keyword>IG-8dee718c-da3c-412b-85ba-f7b5c15d20f1</wmc:Keyword>
+      <wmc:Keyword>UICDS</wmc:Keyword>
+    </wmc:KeywordList>
+    <wmc:Abstract>Default map for incident with id 'IG-8dee718c-da3c-412b-85ba-f7b5c15d20f1'</wmc:Abstract>
+  </wmc:General>
+  <wmc:LayerList>
+    <wmc:Layer hidden="false" queryable="false">
+      <wmc:Server service="OGC:WMS" title="Metacarta" version="1.1.0">
+        <wmc:OnlineResource xlink:href="http://labs.metacarta.com/wms/vmap0" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </wmc:Server>
+      <wmc:Name>basic</wmc:Name>
+      <wmc:Title>Base Map</wmc:Title>
+      <wmc:SRS>EPSG:4326</wmc:SRS>
+    </wmc:Layer>
+    <wmc:Layer hidden="false" queryable="false">
+      <wmc:Server service="OGC:WMS" title="UICDS Core Map Service" version="1.1.0">
+        <wmc:OnlineResource xlink:href="https://uicds-pc.saic.com/uicds/api/IG-8dee718c-da3c-412b-85ba-f7b5c15d20f1/features?" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+      </wmc:Server>
+      <wmc:Title>Incident Features</wmc:Title>
+      <wmc:SRS>EPSG:4326</wmc:SRS>
+    </wmc:Layer>
+  </wmc:LayerList>
+</wmc:ViewContext>
+
